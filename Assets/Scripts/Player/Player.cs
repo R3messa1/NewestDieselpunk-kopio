@@ -108,6 +108,7 @@ public class Player : MonoBehaviour
         _fuelTank = _maxFuel;
 
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         _controller = GetComponent<CharacterController>();
         _dmgfx = GameObject.Find("DamageFx").GetComponent<DamageEffect>();
